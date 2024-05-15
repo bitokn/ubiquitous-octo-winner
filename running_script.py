@@ -1,9 +1,13 @@
 class Race:
     def __init__(self):
-        self.duration, self.intervals = self.choose_duration()
+        self.duration, self.intervals = choose_duration()
 
     def __repr__(self):
         return f"duration {self.duration}, intervals: {self.intervals}"
+
+    def display_run(self):
+        for interval in self.create_run():
+            print("{0:.1f} {1:.1f}".format(interval[0], interval[1]))
 
     def create_run(self):
         peak_speed = float(input("enter peak running speed: "))
@@ -17,22 +21,19 @@ class Race:
                 incline += 0.5
         return speed_incline
 
-    def display_run(self):
-        for interval in self.create_run():
-            print("{0:.1f} {1:.1f}".format(interval[0], interval[1]))
 
-    def choose_duration(self):
-        duration_chosen = False
-        while not duration_chosen:
-            duration = int(
-                input("run duration (enter in increments of 5 minutes)")
-            )  # aight just put an int there it isnt that hard
-            if duration % 5 != 0:
-                print("enter an increment of 5 minutes")
-            else:
-                duration_chosen = True
-        intervals = duration // 5
-        return duration, intervals
+def choose_duration():
+    duration_chosen = False
+    while not duration_chosen:
+        duration = int(
+            input("run duration (enter in increments of 5 minutes)")
+        )  # aight just put an int there it isnt that hard
+        if duration % 5 != 0:
+            print("enter an increment of 5 minutes")
+        else:
+            duration_chosen = True
+    intervals = duration // 5
+    return duration, intervals
 
 
 def main():
