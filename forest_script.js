@@ -15,3 +15,6 @@ function doFunction2() {
 // function hitP() {
 
 // }
+function diceRoller() {
+
+}
