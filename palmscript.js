@@ -6,7 +6,7 @@ window.onload = function () {
         output.innerHTML = x
         console.log(x)
     }
-    let n = 2
+    let n = 50
     const double_output = document.getElementById('doubleoutput')
     const double_button = document.getElementById('doubledice')
     let dbl_button_str = ""
