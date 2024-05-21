@@ -6,7 +6,7 @@ window.onload = function () {
         output.innerHTML = x
         console.log(x)
     }
-    let n = 50
+    let n = prompt("how many dice?")
     const double_output = document.getElementById('doubleoutput')
     const double_button = document.getElementById('doubledice')
     let dbl_button_str = ""
@@ -15,11 +15,6 @@ window.onload = function () {
     }
     double_button.innerHTML = dbl_button_str
     double_button.onclick = function () {
-        // let x = Math.floor(Math.random() * 6) + 1
-        // let y = Math.floor(Math.random() * 6) + 1
-        // double_output.innerHTML = String(x) + " " + String(y)
-        // console.log(x)
-        // console.log(y)
         let dbl_output_Str = ""
         for (let i = 0; i < n; i++) {
             let x = Math.floor(Math.random() * 6) + 1
