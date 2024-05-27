@@ -3,6 +3,7 @@
 
 <head>
     <title>gram page</title>
+    <link rel="icon" type="image/x-icon" href="Roasted_coffee_beans.png">
     <meta charset="UTF-8">
     <style>
         p {
@@ -19,8 +20,15 @@
 </head>
 
 <body>
-    <p>gram</p>
     <a href="mainpage.html">back to mainpage</a>
+    <p>gram</p>
+    <button type="button" id="250ml">250g</button>
+    <button type="button" id="500ml">500g</button>
+    <progress id="bottle" max="1000" value="0">gramna</progress>
+    <br />
+    <input type="text" id="new_measure">
+    <button type="button" id="new_measure_button">create new measure</button>
 </body>
+<script src="gramscript.js"></script>
 
 </html>
