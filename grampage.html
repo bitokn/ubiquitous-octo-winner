@@ -14,17 +14,21 @@
         }
 
         a {
-            color: blue
+            text-decoration: none;
         }
     </style>
 </head>
 
 <body>
-    <a href="mainpage.html">back to mainpage</a>
-    <p>gram</p>
-    <button type="button" id="250ml">250g</button>
-    <button type="button" id="500ml">500g</button>
+    <a href="mainpage.html" style="color:blue">back to mainpage</a>
+
+    <a href="grampage.html">
+        <p>gram</p>
+    </a>
+    <button type="button" id="button_250">250g</button>
+    <button type="button" id="button_500">500g</button>
     <progress id="bottle" max="1000" value="0">gramna</progress>
+    <button type="button" id="button_empty">empty</button>
     <br />
     <input type="text" id="new_measure">
     <button type="button" id="new_measure_button">create new measure</button>

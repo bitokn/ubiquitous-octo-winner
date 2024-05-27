@@ -1,6 +1,7 @@
 window.onload = function () {
-    const button_250 = document.getElementById("250ml")
-    const button_500 = document.getElementById("500ml")
+    const button_250 = document.getElementById("button_250")
+    const button_500 = document.getElementById("button_500")
+    const button_0 = document.getElementById("button_empty")
     const bottle = document.getElementById("bottle")
     const new_measure_button = document.getElementById("new_measure_button")
     const new_measure = document.getElementById("new_measure")
@@ -11,6 +12,10 @@ window.onload = function () {
     }
     button_500.onclick = function () {
         filled += 500
+        bottle.value = filled
+    }
+    button_0.onclick = function () {
+        filled = 0
         bottle.value = filled
     }
     new_measure_button.onclick = function () {
