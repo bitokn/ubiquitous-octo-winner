@@ -18,14 +18,24 @@ window.onload = function () {
         filled = 0
         bottle.value = filled
     }
-    new_measure_button.onclick = function () {
-        let theText = new_measure.value;
+    createButton = function (amount) {
+        let inputText = amount;
         const grutton = document.createElement("button");
         grutton.setAttribute("type", "button");
-        let id_str = 'button_' + theText
-        console.log(id_str)
+        let id_str = 'button_' + inputText
         grutton.setAttribute("id", id_str);
-        grutton.innerHTML = theText + "g";
-        document.body.insertAdjacentElement("afterend", grutton)
+        grutton.innerHTML = inputText + "g";
+        grutton.onclick = function () {
+            filled += parseInt(amount);
+            bottle.value = filled;
+        };
+        return grutton;
+    }
+    const buttonContainer = document.getElementById('buttonContainer');
+
+    new_measure_button.onclick = function () {
+        const new_button = createButton(new_measure.value)
+        console.log(new_button)
+        buttonContainer.appendChild(new_button);
     }
 }
