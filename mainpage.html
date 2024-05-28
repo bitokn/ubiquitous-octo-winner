@@ -8,32 +8,53 @@
         font-family: sans-serif;
     }
 
+    h1 {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: left;
+    }
+
     p {
         text-align: left;
         color: blue;
     }
 
-    h1 {
-        text-align: center;
+    .large-font {
+        font-size: large;
+    }
+
+    .button {
+        font-size: 48px;
+        padding: 8px 16px;
+        border: none;
+        background-color: #007BFF;
+        color: white;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .button:hover {
+        background-color: #0056b3;
     }
 </style>
 
-<body>
-    <h1>welcome to palm forest</h1>
-    So apparently I just add text here and it works... &#128562;
-    <p style="text-align: right;">but isnt it betta to hit p &#128556;</p>
-    <h2 style="text-align: left;">button shenanigans</h2>
-    <p style="font-size: large;">
-        woaj:<input id="grimaceButton" type="button" , value="&#128562;&#128562;&#128562;" onclick="doFunction2()">
-        </br>
-        <textarea id="textbox1" style="font-size: 12px;" rows="1" cols="20"></textarea>
 
+<body>
+    <h1>Welcome to Palm Forest</h1>
+    <p>It is better to hit p &#128556;</p>
+    <h2>Button Shenanigans</h2>
+    <p class="large-font">
+        <input id="grimaceButton" class="button" type="button" value="&#128562;&#128562;&#128562;"
+            onclick="doFunction2()">
+        <br>
+        <textarea id="textbox1"></textarea>
     </p>
-    <a href="palmpage.html">Go to palmpage</a>
+    <a href="palmpage.html">Go to Palm Page</a>
     <a href="grampage.html">
         <p>gramna</p>
     </a>
-
 </body>
 <script src="forest_script.js"></script>
 
