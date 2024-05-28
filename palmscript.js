@@ -6,7 +6,7 @@ window.onload = function () {
         output.innerHTML = x
         console.log(x)
     }
-    let n = prompt("how many dice?")
+    let n = 2
     const double_output = document.getElementById('doubleoutput')
     const double_button = document.getElementById('doubledice')
     let dbl_button_str = ""
@@ -16,11 +16,61 @@ window.onload = function () {
     double_button.innerHTML = dbl_button_str
     double_button.onclick = function () {
         let dbl_output_Str = ""
+        let total = 0
         for (let i = 0; i < n; i++) {
             let x = Math.floor(Math.random() * 6) + 1
             dbl_output_Str += x + " "
-            console.log(x)
+            //console.log(x)
+            total += x
+            console.log(total)
         }
         double_output.innerHTML = dbl_output_Str
+        if (total == 2) {
+            bar_0.value += 1
+        }
+        if (total == 3) {
+            bar_1.value += 1
+        }
+        if (total == 4) {
+            bar_2.value += 1
+        }
+        if (total == 5) {
+            bar_3.value += 1
+        }
+        if (total == 6) {
+            bar_4.value += 1
+        }
+        if (total == 7) {
+            bar_5.value += 1
+        }
+        if (total == 8) {
+            bar_6.value += 1
+        }
+        if (total == 9) {
+            bar_7.value += 1
+        }
+        if (total == 10) {
+            bar_8.value += 1
+        }
+        if (total == 11) {
+            bar_9.value += 1
+        }
+        if (total == 12) {
+            bar_10.value += 1
+        }
     }
+    const progressBarContainer = document.getElementById("progressBars")
+    for (let step = 0; step < 11; step++) {
+        // Runs 5 times, with values of step 0 through 4.
+        const new_bar = document.createElement("progress")
+        let id_str = "bar_" + step
+        new_bar.setAttribute("id", id_str)
+        new_bar.max = 36
+        new_bar.value = 0
+        //new_bar.value = step
+        progressBarContainer.appendChild(new_bar)
+        progressBarContainer.appendChild(document.createElement("br"))
+        console.log("Walking east one step")
+    }
+    //bar_4.value = 36
 }
