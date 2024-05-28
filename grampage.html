@@ -7,10 +7,7 @@
     <meta charset="UTF-8">
     <style>
         p {
-            color: darkorange;
-            font-size: 48px;
             font-family: Arial;
-
         }
 
         a {
@@ -23,18 +20,17 @@
     <a href="mainpage.html" style="color:blue">back to mainpage</a>
 
     <a href="grampage.html">
-        <p>gram</p>
+        <p style="color: darkorange;font-size: 48px;">gram</p>
     </a>
-    <button type="button" id="button_250">250g</button>
-    <button type="button" id="button_500">500g</button>
-    <progress id="bottle" max="1000" value="0">gramna</progress>
-    <button type="button" id="button_empty">empty</button>
-    <br />
-    <input type="text" id="new_measure">
-    <button type="button" id="new_measure_button">create new measure</button>
+    <div id="bottleContainer">
+        <progress id="bottle" max="1000" value="0">gramna</progress>
+        <button type="button" id="button_empty">empty</button>
+    </div>
 
     <div id="buttonContainer">
-
+        <p>buttons!</p>
+        <input type="text" id="new_measure">
+        <button type="button" id="new_measure_button">create new measure</button> <br />
     </div>
 </body>
 <script src="gramscript.js"></script>
