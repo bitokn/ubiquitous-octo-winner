@@ -8,23 +8,23 @@ window.onload = function () {
     }
     let barArray = []
     const progressBarContainer = document.getElementById("progressBars")
-    for (let step = 0; step < 11; step++) {
+    let n = 2
+    for (let i = n; i <= (n * 6); i++) {
         const new_bar = document.createElement("progress")
-        let id_str = "bar_" + step
+        let id_str = "bar_" + i
         new_bar.id = id_str
-        new_bar.max = 36
+        new_bar.max = 50
         new_bar.value = 0
-        let stringthingyidk = `${step + 2}`.padStart(3, "-")
+        let stringthingyidk = `${i}`.padStart(3, "-")
         const barLabelStr = document.createTextNode(stringthingyidk)
         //new_bar.value = step
-        barArray.push(step)
+        barArray.push(i)
         progressBarContainer.appendChild(barLabelStr)
         progressBarContainer.appendChild(new_bar)
         progressBarContainer.appendChild(document.createElement("br"))
         //console.log("Walking east one step")
     }
     console.log(barArray)
-    let n = 2
     const double_output = document.getElementById('doubleoutput')
     const double_button = document.getElementById('doubledice')
 
@@ -44,50 +44,17 @@ window.onload = function () {
             console.log(total)
         }
         double_output.innerHTML = dbl_output_Str + "= " + total
-        for (let i = 0; i < 11; i++) {
+        for (let i = 0; i < barArray.length; i++) {
             let bar_i = document.getElementById(("bar_" + barArray[i]))
-            if (total == i + 2) {
+            if (total == i + n) {
                 bar_i.value += 1
                 console.log(bar_i)
             }
         }
-        // if (total == 2) {
-        //     bar_0.value += 1
-        // }
-        // if (total == 3) {
-        //     bar_1.value += 1
-        // }
-        // if (total == 4) {
-        //     bar_2.value += 1
-        // }
-        // if (total == 5) {
-        //     bar_3.value += 1
-        // }
-        // if (total == 6) {
-        //     bar_4.value += 1
-        // }
-        // if (total == 7) {
-        //     bar_5.value += 1
-        // }
-        // if (total == 8) {
-        //     bar_6.value += 1
-        // }
-        // if (total == 9) {
-        //     bar_7.value += 1
-        // }
-        // if (total == 10) {
-        //     bar_8.value += 1
-        // }
-        // if (total == 11) {
-        //     bar_9.value += 1
-        // }
-        // if (total == 12) {
-        //     bar_10.value += 1
-        // }
     }
 
 
-    // for (let i = 0; i < 50000; i++) {
+    // for (let i = 0; i < 100000; i++) {
     //     double_button.click()
     // }
 
