@@ -8,12 +8,13 @@ window.onload = function () {
     }
     let barArray = []
     const progressBarContainer = document.getElementById("progressBars")
-    let n = 2
+    // let n = 2
+    let n = parseInt(prompt("how many dice", "2"))
     for (let i = n; i <= (n * 6); i++) {
         const new_bar = document.createElement("progress")
         let id_str = "bar_" + i
         new_bar.id = id_str
-        new_bar.max = 50
+        new_bar.max = 35
         new_bar.value = 0
         let stringthingyidk = `${i}`.padStart(3, "-")
         const barLabelStr = document.createTextNode(stringthingyidk)
@@ -53,9 +54,10 @@ window.onload = function () {
         }
     }
 
-
-    // for (let i = 0; i < 100000; i++) {
-    //     double_button.click()
-    // }
-
+    const rollbutton = document.getElementById("rollbunch")
+    rollbutton.onclick = function () {
+        for (let i = 0; i < 100; i++) {
+            double_button.click()
+        }
+    }
 }
