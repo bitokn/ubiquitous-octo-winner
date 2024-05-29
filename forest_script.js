@@ -1,7 +1,5 @@
 function doFunction1() {
     let grimaceField = document.getElementById('textbox1')
-    grimaceField.innerHTML = "press button to grimace"
-    grimaceField.style.fontSize = "48px"
 }
 doFunction1()
 function doFunction2() {

@@ -5,56 +5,56 @@
 <meta charset="UTF-8">
 <style>
     body {
-        font-family: sans-serif;
-    }
-
-    h1 {
-        text-align: center;
-    }
-
-    h2 {
-        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+        background-color: #f4f4f9;
+        margin: 20px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
     }
 
     p {
-        text-align: left;
-        color: blue;
-    }
-
-    .large-font {
-        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
     }
 
     .button {
-        font-size: 48px;
-        padding: 8px 16px;
-        border: none;
-        background-color: #007BFF;
-        color: white;
+        font-size: medium;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        background-color: #f8f9fa;
+        color: #333;
         cursor: pointer;
         border-radius: 4px;
+        transition: background-color 0.3s, border-color 0.3s;
     }
 
     .button:hover {
-        background-color: #0056b3;
+        background-color: #e2e6ea;
+        border-color: #adb5bd;
+    }
+
+    .a {
+        text-decoration: none;
     }
 </style>
 
 
 <body>
-    <h1>Welcome to Palm Forest</h1>
-    <p>It is better to hit p &#128556;</p>
-    <h2>Button Shenanigans</h2>
-    <p class="large-font">
-        <input id="grimaceButton" class="button" type="button" value="&#128562;&#128562;&#128562;"
-            onclick="doFunction2()">
-        <br>
-        <textarea id="textbox1"></textarea>
-    </p>
-    <a href="palmpage.html">Go to Palm Page</a>
-    <a href="grampage.html">
-        <p>gramna</p>
-    </a>
+    <p>welcome to palm forest</p>
+    <input id="grimaceButton" class="button" type="button" value="&#128562;&#128562;&#128562;" onclick="doFunction2()">
+    <br />
+    <p>press the button above to grimace</p>
+    <textarea id="textbox1"></textarea>
+    <br />
+
+    <a href="grampage.html">grampage</a>
+    <a href="palmpage.html">double dice!</a>
 </body>
 <script src="forest_script.js"></script>
 
