@@ -28,8 +28,13 @@ window.onload = function () {
     buttonContainer.appendChild(createButton(500)) // default buttons
 
     new_measure_button.onclick = function () {
-        const new_button = createButton(new_measure.value)
-        console.log(new_button)
-        buttonContainer.appendChild(new_button);
+        let textfield_str = new_measure.value
+        if (typeof textfield_str === "string" && textfield_str.length === 0) {
+            console.log("xd")
+        } else {
+            const new_button = createButton(new_measure.value)
+            console.log(new_button)
+            buttonContainer.appendChild(new_button);
+        }
     }
 }
