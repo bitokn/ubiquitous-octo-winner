@@ -1,12 +1,12 @@
 window.onload = function () {
-    const button_0 = document.getElementById("button_empty")
+    const button_empty = document.getElementById("button_empty")
     const bottle = document.getElementById("bottle")
     const new_measure_button = document.getElementById("new_measure_button")
     const new_measure = document.getElementById("new_measure")
     const buttonContainer = document.getElementById('buttonContainer');
     let filled = 0
 
-    button_0.onclick = function () {
+    button_empty.onclick = function () {
         filled = 0
         bottle.value = filled
     }
@@ -30,7 +30,7 @@ window.onload = function () {
     new_measure_button.onclick = function () {
         let textfield_str = new_measure.value
         if (typeof textfield_str === "string" && textfield_str.length === 0) {
-            console.log("xd")
+            console.log("can't make an empty measure!")
         } else {
             const new_button = createButton(new_measure.value)
             console.log(new_button)
