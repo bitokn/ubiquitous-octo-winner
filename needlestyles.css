@@ -1,0 +1,58 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+p {
+    text-align: center;
+    color: green
+}
+
+/* styles.css */
+
+#buttonArea {
+    /* display: flex; */
+    /* Center aligns the buttons horizontally */
+    text-align: center;
+}
+
+#buttonArea button {
+    font-size: 1rem;
+    /* Sets the font size of the buttons */
+    color: #fff;
+    /* Text color of the buttons */
+    background-color: lightgreen;
+    /* Background color of the buttons */
+    cursor: pointer;
+    /* Changes the cursor to pointer on hover */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for background color change */
+}
+
+#buttonArea button:hover {
+    background-color: green;
+}
+
+.modern-h1 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin: 1.5em 0;
+    padding: 0.5em 0;
+    letter-spacing: 1px;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.modern-h1:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(to right, #e9ecef, #dee2e6);
+}
