@@ -19,8 +19,8 @@ p {
 }
 
 #buttonArea button {
-    font-size: 1rem;
-    padding: 1em;
+    font-size: 2rem;
+    padding: 0.5em;
     color: #fff;
     background-color: lightgreen;
     cursor: pointer;
