@@ -23,7 +23,4 @@ window.onload = function () {
         buttonArea.appendChild(createButton(`${emojiValue}`, emojiField))
 
     }
-    // for (let i = 0; i < 10000; i++) {
-    //     button_1.onclick()
-    // }
 }
