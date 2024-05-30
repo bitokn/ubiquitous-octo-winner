@@ -15,22 +15,15 @@ p {
 /* styles.css */
 
 #buttonArea {
-    /* display: flex; */
-    /* Center aligns the buttons horizontally */
     text-align: center;
 }
 
 #buttonArea button {
     font-size: 1rem;
-    /* Sets the font size of the buttons */
+    padding: 1em;
     color: #fff;
-    /* Text color of the buttons */
     background-color: lightgreen;
-    /* Background color of the buttons */
     cursor: pointer;
-    /* Changes the cursor to pointer on hover */
-    transition: background-color 0.3s ease;
-    /* Smooth transition for background color change */
 }
 
 #buttonArea button:hover {
@@ -49,7 +42,6 @@ p {
     background: linear-gradient(to right, #f8f9fa, #e9ecef);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .modern-h1:hover {
