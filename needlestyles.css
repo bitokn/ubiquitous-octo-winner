@@ -49,7 +49,7 @@ p {
 }
 
 progress { 
-    width: 300px;  /* Change the width */ 
+    width: 600px;  /* Change the width */ 
     height: 30px;  /* Change the height */ 
     /* Other styles can be added here */ 
 } 
