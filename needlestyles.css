@@ -48,8 +48,3 @@ p {
     background: linear-gradient(to right, #e9ecef, #dee2e6);
 }
 
-progress { 
-    width: 600px;  /* Change the width */ 
-    height: 30px;  /* Change the height */ 
-    /* Other styles can be added here */ 
-} 
